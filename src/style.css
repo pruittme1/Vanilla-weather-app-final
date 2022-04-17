@@ -1,0 +1,248 @@
+body {
+  background: white;
+  margin-top: 10;
+  display: block;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: monospace;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #bf04c5;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #bf04c5;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+#temperature {
+  font-size: 50px;
+  color: #bf04c5;
+  font-weight: 300px;
+}
+
+#humidity {
+  color: #bf04c5;
+  font-weight: 100px;
+}
+
+#wind {
+  color: #bf04c5;
+  font-weight: 100px;
+}
+
+#icon {
+  font-size: 70px;
+  margin: 10px 0;
+  padding-bottom: 30px;
+}
+
+#celsius-link {
+  color: #bf04c5;
+  cursor: default;
+  text-decoration: none;
+}
+
+#celsius-link:hover {
+  text-decoration: none;
+}
+
+.active {
+  color: #bf04c5;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+}
+
+.current-temp-emoji {
+  font-size: 70px;
+}
+
+.container {
+  max-width: 720px;
+}
+
+.weather-body {
+  color: rgb(48, 47, 47);
+  background-image: url(../img/Palm-trees.png);
+  background-blend-mode: overlay rgb(252, 182, 244);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  margin-top: 20px;
+  border-width: 2;
+  border-radius: 6px;
+}
+
+.App {
+  max-width: 800px;
+  margin: 60px auto;
+  border-width: 4px;
+  border: 4px;
+  border-color: #272142;
+  border-radius: 4px;
+}
+
+.Weather {
+  font-family: "Cerebri-Sans", Helvetica, Arial, sans-serif;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 30px 50px rgba(65, 50, 100, 0.08);
+  padding: 40px;
+  color: rgb(48, 47, 47);
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #34313a;
+  padding-bottom: 30;
+  padding-top: 40;
+}
+
+.search-input {
+  background: #f9f7fe;
+  border: none;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 6px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+}
+
+.btn {
+  background: #bf04c5;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 9px 0;
+  border: none;
+  height: 40px;
+}
+
+.search-input::placeholder {
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.Weather h1 {
+  margin: 20px 0 10px 0;
+  line-height: 29px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  color: #272142;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: rgb(48, 47, 47);
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+}
+
+li strong {
+  color: #bf04c5;
+  font-weight: normal;
+}
+
+.temperature {
+  font-weight: bold;
+  color: #bf04c5;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 1;
+}
+
+canvas {
+  margin: 20px 0;
+}
+
+.unit {
+  color: #bf04c5;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+
+.WeatherForecastPreview {
+  font-family: monospace;
+  border-radius: 20% 0 20% 0;
+  border: 1px solid #bf04c5;
+  padding: 5px;
+  box-shadow: 4px 4px 8px #bf04c5;
+  background-color: white;
+}
+
+footer {
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: rgb(48, 47, 47);
+}
+
+.WeatherForecast {
+  text-align: center;
+  margin: 40px 0;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 50px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(48, 47, 47);
+  font-family: monospace;
+  padding: 4px;
+}
+
+.forecast-temperature {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: hsl(300, 90%, 40%);
+  font-weight: bold;
+}
+
+.forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+.WeatherForecast canvas {
+  display: block;
+  margin: 20px auto;
+}
+
+.WeatherInfo {
+  margin-top: 20px;
+}
