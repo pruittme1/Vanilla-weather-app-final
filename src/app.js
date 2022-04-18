@@ -21,31 +21,27 @@ function formateDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
-  console.log(response.data.daily);
-}
+function displayForecast(response) {
+  let forecast = response.data.daily;
 
-let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-
-function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
+  days.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
                     <div class="col-2">
                       <div class="WeatherForecastPreview">
-                        <div class="forecast-date">${day}</div>
+                        <div class="forecast-date">${forecastDay}</div>
                           <img 
-                          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                          alt="clear"
+                          src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+                          alt=""
                           width="32"
                           />
                           <div class="forecast-temperature">
-                            <span class="forecast-temperature-max">80°</span>
-                            <span class="forecast-temperature-min">71°</span>
+                            <span class="forecast-temperature-max">${forecastDay.temp.max}</span>
+                            <span class="forecast-temperature-min">${forecastDay.temp.min}</span>
                           </div>
                       </div>
                </div>        
