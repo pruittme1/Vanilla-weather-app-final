@@ -33,7 +33,7 @@ function displayForecast(response) {
       `
                     <div class="col-2">
                       <div class="WeatherForecastPreview">
-                        <div class="forecast-date">${forecastDay}</div>
+                        <div class="forecast-date">${forecastDay.dt}</div>
                           <img 
                           src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                           alt=""
