@@ -182,6 +182,11 @@ canvas {
   margin: 20px 0;
 }
 
+.row {
+  position: relative;
+  align-items: center;
+}
+
 .unit {
   color: #bf04c5;
   font-size: 28px;
