@@ -183,8 +183,7 @@ canvas {
 }
 
 .row {
-  position: relative;
-  align-items: center;
+  text-align: center;
 }
 
 .unit {
